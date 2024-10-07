@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Note</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sticky Note</h1>
+    </header>
+    <!-- Option for Styling -->
+    <div class="options">
+        <div class="option">
+            <label for="bg-color">
+                Background Color:
+            </label>
+            <input type="color" id="bg-color" value="#fff">
+        </div>
+        <div class="option">
+            <label for="bg-color">
+                Text Color:
+            </label>
+            <input type="color" id="text-color" value="#333">
+        </div>
+        <button id="new-note-btn" onclick="createStickyNote()">
+            Create NeW Sticky Note
+       </button>
+    </div>
+    <div class="container-padding"></div>
+
+    <div class="sticky-notes-container" id="sticky-notes-container">
+        <!-- dynamic sticky note here -->
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
